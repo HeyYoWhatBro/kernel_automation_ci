@@ -40,7 +40,7 @@ jobs:
         run: |
           git clone $REPO -b $BRANCH kernel 
           cd kernel
-          wget https://raw.githubusercontent.com/HeyYoWhatBro/Scripts/myscripts/kernel.sh
-          bash kernel.sh
+          wget https://raw.githubusercontent.com/HeyYoWhatBro/Scripts/myscripts/gcc.sh
+          bash gcc.sh
 
 
