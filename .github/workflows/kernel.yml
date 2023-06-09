@@ -6,7 +6,6 @@ name: Kernel CI
 on:
   workflow_dispatch:
     inputs:
-
       repo:
           description: 'https://github.com/NadinsDXD/kernel_xiaomi_mt6768/'
           required: true
@@ -42,7 +41,6 @@ jobs:
           git clone $REPO -b $BRANCH kernel 
           cd kernel
           wget https://raw.githubusercontent.com/HeyYoWhatBro/Scripts/myscripts/kernel.sh
-
           bash kernel.sh
 
 
