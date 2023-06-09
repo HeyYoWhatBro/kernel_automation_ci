@@ -30,8 +30,8 @@ jobs:
     steps:
       - name: Initializing environment
         run: |
-          git config --global user.name "sarthakroy2002"
-          git config --global user.email "sarthakroy2002@gmail.com"
+          git config --global user.name "HeyYoWhatBro"
+          git config --global user.email "planetgames88@gmail.com"
           df -h
           ld --version
           gcc -v
