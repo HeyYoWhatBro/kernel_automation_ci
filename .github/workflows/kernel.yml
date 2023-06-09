@@ -17,7 +17,7 @@ on:
 env:
   REPO: ${{ github.event.inputs.repo }}
   BRANCH: ${{ github.event.inputs.branch }}
-  token: ${{ secrets.TOKEN }}
+  TELEGRAM_TOKEN: ${{ secrets.TOKEN }}
   chat_id: ${{ secrets.CHAT_ID }}
 
 jobs:
