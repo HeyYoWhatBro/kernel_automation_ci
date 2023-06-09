@@ -6,18 +6,15 @@ name: Kernel CI
 on:
   workflow_dispatch:
     inputs:
-      device:
-          description: 'device codename (RMX2020/RM6785)'
-          required: true
+
       repo:
-          description: 'Kernel source link'
+          description: 'https://github.com/NadinsDXD/kernel_xiaomi_mt6768/'
           required: true
       branch:
-          description: 'Kernel source branch'
+          description: 'evangelion'
           required: true   
 
 env:
-
   REPO: ${{ github.event.inputs.repo }}
   BRANCH: ${{ github.event.inputs.branch }}
   token: ${{ secrets.TOKEN }}
