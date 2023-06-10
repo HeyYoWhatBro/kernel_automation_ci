@@ -7,10 +7,10 @@ on:
   workflow_dispatch:
     inputs:
       repo:
-          description: 'https://github.com/NadinsDXD/kernel_xiaomi_mt6768/'
+          description: 'Kernel'
           required: true
       branch:
-          description: 'evangelion'
+          description: 'Branch'
           required: true   
 
 env:
@@ -41,7 +41,7 @@ jobs:
         run: |
           git clone $REPO -b $BRANCH kernel 
           cd kernel
-          wget https://raw.githubusercontent.com/HeyYoWhatBro/Scripts/myscripts/gcc.sh
-          bash gcc.sh
+          wget https://raw.githubusercontent.com/HeyYoWhatBro/Scripts/myscripts/Clang.sh
+          bash Clang.sh
 
 
